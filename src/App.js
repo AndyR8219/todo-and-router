@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './app.module.css'
+import { Routes, Route } from 'react-router-dom'
+import { MainPage } from './components/MainPage/main-page'
+import { TaskPage } from './components/TaskPage/task-page'
+import { NotFound } from './components/NotFound/not-found'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <div>
+        <h3 className={styles.h3}>Cписком дел</h3>
+        <div className={styles.add}>
+          <input type="text" />
+          <button>Добавить</button>
+        </div>
+      </div>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/task/:id" element={<TaskPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

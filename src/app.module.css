@@ -1,0 +1,14 @@
+.app {
+  text-align: center;
+}
+
+.h3 {
+  margin: 0 auto;
+  background: gray;
+  padding: 10px 0;
+}
+
+.add {
+  padding: 10px 0;
+  background: rgb(190, 190, 190);
+}
