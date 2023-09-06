@@ -1,0 +1,39 @@
+.taskPage {
+  text-align: center;
+}
+
+.h3 {
+  margin: 0 auto;
+  background: rgb(70, 209, 151);
+  padding: 10px 0;
+}
+
+.blockButton {
+  padding: 10px 0;
+  background: rgb(145, 231, 188);
+}
+
+.button {
+  margin: 0 5px;
+}
+
+.bodyTask {
+  margin: 50px auto;
+  width: 70%;
+  background: #d3f9fc;
+  text-align: left;
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  max-height: 25px;
+}
+
+.input {
+  width: 93%;
+}

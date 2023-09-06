@@ -1,11 +1,100 @@
+.app {
+  text-align: center;
+}
+
+.h2 {
+  margin: 0 auto;
+  background: rgb(70, 209, 151);
+  padding: 10px 0;
+}
+
+.add,
+.searchAndSort {
+  padding: 10px 0;
+  background: rgb(145, 231, 188);
+}
+
+.searchAndSort {
+  margin-left: -6px;
+}
+
+.blockTodolist {
+  margin-top: 50px;
+}
+
 ul {
+  display: grid;
+  margin: 0;
   padding: 0;
+  justify-items: center;
 }
 
-li {
+.button {
+  display: inline-block;
+  padding: 5px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.button:hover {
+  background-color: #bdbdbd;
+}
+
+.input {
+  width: 50%;
+  padding: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.sorted {
+  margin-left: 10px;
+  display: inline-block;
+  padding: 5px;
+  transition: background-color 0.15s ease-in-out;
+  margin-right: 10px;
+  background: rgb(94, 94, 94);
+  color: white;
+}
+
+.sorted:hover {
+  background: rgb(214, 214, 214);
+  color: black;
+}
+
+.notSorted {
+  margin-left: 10px;
+  display: inline-block;
+  padding: 5px;
+  transition: background-color 0.15s ease-in-out;
+  margin-right: 10px;
+}
+
+.notSorted:hover {
+  background-color: #bdbdbd;
+}
+
+ul li {
+  width: 40%;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #d3f9fc;
+  font-size: 18px;
+  transition: 0.2s;
   list-style-type: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.h4 {
-  border-bottom: 1px solid black;
+li a {
+  text-decoration: none;
+}
+
+ul li:nth-child(odd) {
+  background: #a2f2f8;
+}
+
+ul li:hover {
+  background: #66ecec;
 }
